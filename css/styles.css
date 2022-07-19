@@ -6,6 +6,7 @@
     --wighte-color: #ffffff;
     --background-btn-color:#F5F4FA;
     --contacts-color:rgba(255, 255, 255, 0.6);
+    --hero-and-footer-background-color:#2F303A;
 }
 body {
 	font-family:Roboto, sans-serif;
@@ -14,8 +15,16 @@ body {
 }
 
 .logo {
-	color:var(--black-color);
-}
+color:var(--accent-text-color);
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1,19;
+letter-spacing: 0.03em;
+text-decoration: none;}
+.header-logo{color:var(--black-color)}
+.footer-logo{color:var(--wighte-color)}
+
 .list {
 	list-style: none;
 }
@@ -64,6 +73,7 @@ letter-spacing: 0.02em;
 /* ------------------------герой-------------------- */
 /* bcg-color для hero-title- демонстр-ный */
 
+.hero{background-color:var(--hero-and-footer-background-color) ;}
 .hero-title{
 font-weight: 900;
 font-size: 44px;
@@ -72,7 +82,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--wighte-color);
-background-color: aquamarine;}
+;}
 .hero-button
 {
     cursor: pointer;
@@ -84,13 +94,10 @@ background-color: aquamarine;}
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--title-text-color);
-    background-color: var(--background-btn-color-);
-    }
-.hero-button:hover,.hero-button:focus{
     color:var(--wighte-color);
     background-color:var(--accent-text-color);
-}
+    }
+.hero-button:hover,.hero-button:focus{}
 /* -------------------------------------------- */
 .section-title{
 font-weight: 700;
@@ -130,8 +137,8 @@ line-height: 19px;
 }
 /* ----------------------footer-------------------- */
 .footer {
-    background-color: aquamarine;
-/* добавлен демонстрационно */
+    background-color: var(--hero-and-footer-background-color);
+    
 }
 .adress-item {
 font-style:normal;
